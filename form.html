@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="form.css" media="screen">
+    <title>Form</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="title">Form to DEVs</h1>
+        <p id="subtitle">Complet your info</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="group">
+            <div class="topic">
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="topic">
+                <label for="lastname"><strong>Last Name</strong></label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div>
+        </fieldset>
+
+        <div class="topic">
+            <label><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="topic">
+            <label><strong>Are you:</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">fullstack
+            </label>
+        </div class="topic">
+        <div class="topic">
+            <label><strong>Seniorage</strong></label>
+            <select id="seniorage">
+                <option selected disabled value="">Select</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="group">
+            <div id="check">
+                <label><strong>Select your languages and Frameworks:</strong></label>
+                <input type="checkbox" id="frame1" name="frame1" value="HTML">
+                <label for="frame1">HTML</label>
+                <input type="checkbox" id="frame2" name="frame2" value="CSS">
+                <label for="frame2">CSS</label>
+                <input type="checkbox" id="fame3" name="frame3" value="Javascript">
+                <label for="frame3">Javascript</label>
+                <input type="checkbox" id="frame4" name="frame4" value="PHP">
+                <label for="frame4">PHP</label>
+                <input type="checkbox" id="frame5" name="frame5" value="Python">
+                <label for="frame5">Python</label>
+                <input type="checkbox" id="frame6" name="frame6" value="C#">
+                <label for="frame6">C#</label>
+                <input type="checkbox" id="frame7" name="frame7" value="Java">
+                <label for="frame7">Java</label>
+            </div>
+        </fieldset>
+        <div class="topic">
+            <br>
+            <label for="story"><strong>Tell your story:</strong></label>
+            <textarea row="6" style="width: 26em" id="story" name="story"></textarea>
+        </div>
+        <button class="button" type="submit" onsubmit="">Submit</button>
+    </form>
+</body>
+</html>
